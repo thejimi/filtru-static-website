@@ -1,9 +1,8 @@
 setTimeout(() => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const domain = urlParams.get("domain")
     document.getElementById("domainname").innerHTML = `be careful.`
-    document.getElementById("sub").innerHTML = `Linktree websites often redirect to nsfw/"exclusive" content. You don't want to go that path.`
+    document.getElementById("sub").innerHTML = `Linktree websites often redirect to nsfw content`
     document.getElementById("ignorebtn").addEventListener("click", ignore);
 }, 500);
 
