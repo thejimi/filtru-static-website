@@ -13,7 +13,7 @@ function ignore(){
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const url = urlParams.get("url")
-  window.location.href = (`${url}&FILTRUIGNORESEARCHENGINEBLOCKED=true`)
+  window.location.href = (`${url}&Filtru_Allowed_Search=true`)
 }
 
 function goback(){
