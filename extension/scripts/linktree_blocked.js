@@ -10,5 +10,9 @@ function ignore(){
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const url = urlParams.get("url")
-  window.location.href = (`${url}&Filtru_Allowed_Linktree=true`)
+  if(url.includes('?')){
+    window.location.href = (`${url}&Filtru_Allowed_Linktree=true`)
+  } else {
+    window.location.href = (`${url}?Filtru_Allowed_Linktree=true`)
+  }
 }
